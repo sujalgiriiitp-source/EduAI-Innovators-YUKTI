@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduAI - Smart Study Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h1>EduAI - Smart Study Planner</h1>
+
+    <form action="/generate" method="post">
+        <input type="text" name="subject" placeholder="Enter Subject" required><br>
+        <input type="number" name="hours" placeholder="Study Hours" required><br>
+
+        <select name="level">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select><br>
+
+        <button type="submit">Generate Smart Plan</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+

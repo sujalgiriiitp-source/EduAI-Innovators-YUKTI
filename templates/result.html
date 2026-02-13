@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Your Score: {{ score }}/3</h2>
+    <p>{{ message }}</p>
+
+    <div class="progress-container">
+        <div class="progress-bar" style="width: {{ (score/3)*100 }}%;"></div>
+    </div>
+
+    <h3>Suggestions:</h3>
+    <ul>
+        {% for item in feedback %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/"><button>Try Again</button></a>
+</div>
+
+</body>
+</html>
+
+
+
+

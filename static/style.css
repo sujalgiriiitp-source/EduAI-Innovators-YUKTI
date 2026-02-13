@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+input, select {
+    padding: 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    background: #1cc88a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17a673;
+}
+
+.progress-container {
+    background: #eee;
+    border-radius: 10px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background: #1cc88a;
+    height: 100%;
+    border-radius: 10px;
+}
+
+

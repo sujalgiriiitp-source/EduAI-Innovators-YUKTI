@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h2>Your Study Plan</h2>
+    <p><strong>Subject:</strong> {{ subject }}</p>
+    <p><strong>Difficulty:</strong> {{ level }}</p>
+    <p>{{ recommendation }}</p>
+
+    <ul>
+        {% for topic, hour in plan %}
+        <li>{{ topic }} - {{ hour }} hours</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Quick Quiz</h3>
+
+    <form action="/result" method="post">
+        <p>2 + 2 = ?</p>
+        <input type="text" name="q1" required><br>
+
+        <p>Derivative of x^3 is?</p>
+        <input type="text" name="q2" required><br>
+
+        <p>sin(90°) = ?</p>
+        <input type="text" name="q3" required><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
