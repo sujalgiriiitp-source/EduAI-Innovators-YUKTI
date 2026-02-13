@@ -31,7 +31,7 @@ HTML
 
 CSS
 
-Python Logic
+Python Flask
 
 🔹 Developed For
 
